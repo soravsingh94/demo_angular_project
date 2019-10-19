@@ -1,0 +1,5 @@
+<div>
+  <select [(ngModel)]="countryItem" (click)="changeValue()">
+    <option *ngFor="let item of objArray" [value]="item.id" >{{item.name}}</option>
+  </select>
+</div>
